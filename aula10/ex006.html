@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            display: block;
+            margin: auto;
+            width: 250px;
+            height: 250px;
+            background-color: blueviolet;
+            font-size: 2em;
+            color: yellow;
+            text-align: center;
+            line-height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair ()">Interaja...</div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        /*
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        VOCÊ PODE MONTAR ESSAS LINHAS DE CODIGO E DEIXAR APENAS A DIV COM O ID NO BODY/HTML
+
+        */
+        
+        function clicar() {
+            a.innerText = 'Clicou'
+            a.style.backgroundColor = 'blue' 
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu!'
+        }
+        
+    </script>
+
+</body>
+</html>
