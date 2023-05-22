@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(125, 218, 125);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos com DOM</h1>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, aut. Minus, nobis, quidem nulla velit voluptate eum inventore, voluptas rerum eos quia asperiores delectus maiores modi. Quia iste eius adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam deleniti quaerat quae doloribus corporis, eos est quos repellat voluptatibus ratione possimus quis quia non nam magnam reprehenderit nostrum itaque aperiam.</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    
+    <div>Clique aqui</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerHTML)
+        p1.style.color = 'white'
+    </script>
+</body>
+</html>
