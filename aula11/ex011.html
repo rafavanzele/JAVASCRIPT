@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania</title>
+</head>
+<body>
+    <h1>Pesquisa de cidadania</h1>
+    
+    Você está vivendo em <input type="text" name="txt" id="txt">
+    
+    <input type="button" value="Analisar" onclick="analisar()">
+    
+    <div id="res">
+
+    </div>
+
+    <script>
+        function analisar() {
+            var país = window.document.getElementById('txt')
+            var res = window.document.getElementById('res')
+            
+            
+            res.innerHTML = `<p>Você está vivendo em ${país}.</p>`
+            if (país == 'Brasil') {
+                res.innerHTML += '<p>Você é Brasileiro</p>' 
+            } else {
+                res.innerHTML += '<p>Você é estrangeiro<p>'
+            }
+        }
+    </script>
+</body>
+</html>
