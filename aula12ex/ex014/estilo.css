@@ -21,6 +21,17 @@ section {
     padding: 15px;
 }
 
+div {
+    text-align: center;
+    padding: 5px;
+}
+
+div > img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
 footer {
     color: white;
     text-align: center;
